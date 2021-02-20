@@ -1,0 +1,86 @@
+body {
+    background-image: url("../img/superhero-background-4880906_1920.jpg");
+    background-repeat: repeat-y;
+    text-align: center;
+  }
+
+form.marvel_search {
+    justify-content: center;
+    display: grid;
+    margin: auto;
+} 
+.card {
+    /* margin-right: auto;
+    margin-left: auto; */
+    width: 14rem;
+}
+.showResult {
+    display: inline-grid;
+    justify-content: center;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.showResult-1 {
+    display: inline-grid;
+    justify-content: center;
+    grid-template-columns: 50% 50% ;
+    
+}
+/* .marvel_image {
+    width: auto;
+    height: auto;
+} */
+.marvelTitle {
+    color: #EFC500;
+}
+.marvel_search {
+    width: 500px;
+    align-items: center;
+}
+
+#inputMarvelName {
+    color: white;
+}
+#inputMarvelName {
+    color: #105DD7;
+}
+.noresult {
+    color: red;
+}
+.card-body {
+    text-align: left;
+}
+#inputMarvelName {
+    text-align: left;
+}
+button#searchBtn.btn.btn-primary.mb-4 {
+    margin-right: 355px;
+}
+/* for Tablet */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .showResult-1, .showResult {
+        display: inline-grid;
+        justify-content: center;
+        grid-template-columns: 50% 50%;
+       
+    }
+}
+/* iPhones Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .showResult-1, .showResult {
+        display: block;
+        justify-content: center;
+        padding-left: 150px;
+        /* grid-template-columns: 100%; */
+    }
+    
+}
+
+
+ 
